@@ -3,7 +3,7 @@ import menu from './menu-burger.png'
 import Logo_1 from './main-logo.png'
 
 
-export const assests= {
+export const assets= {
     logo,
     menu,
     Logo_1
