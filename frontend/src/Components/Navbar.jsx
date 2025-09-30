@@ -1,12 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { assets, navItems } from '../assets/assets'
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+const [isScrolled, setIsScrolled] = useState(false)
+
+useEffect(()=>{
+const HandelScroll = ()=>{
+    setIsScrolled(window.scrollY>50);
+}
+window.addEventListener("scroll", HandelScroll);
+return ()=> window.removeEventListener("scroll",HandelScroll)
+},[])
+
+
     const [MenuOpen, setMenuOpen] = useState(false);
       const toggleMenu = () => setMenuOpen(!MenuOpen);
   return (
-    <nav className="flex items-center justify-between  max-md:w-full top-0  px-6 py-4 rounded-2xl mx-2 font-bold relative  text-white bg-black">
+    <nav className={`flex items-center justify-between  max-md:w-full top-0  px-6 py-4 rounded-2xl mx-2 font-bold relative  text-black  ${isScrolled ? "bg-transparent  text-black" :"bg-black text-white"}`}>
       {/* Logo */}
       <div>
         <img src={assets.Logo_1} alt="Logo" className="w-36 h-auto"  />
