@@ -6,7 +6,7 @@ const Navbar = () => {
     const [MenuOpen, setMenuOpen] = useState(false);
       const toggleMenu = () => setMenuOpen(!MenuOpen);
   return (
-    <nav className="flex items-center justify-between  max-md:w-full top-0  px-6 py-4 rounded-2xl mx-2 font-bold relative mt-4 text-white bg-black">
+    <nav className="flex items-center justify-between  max-md:w-full top-0  px-6 py-4 rounded-2xl mx-2 font-bold relative  text-white bg-black">
       {/* Logo */}
       <div>
         <img src={assets.Logo_1} alt="Logo" className="w-36 h-auto"  />
@@ -31,9 +31,11 @@ const Navbar = () => {
       </div>
 
       {/* Sign In / Sign Up */}
-   <div className=" hidden items-center gap-4  md:flex">
+   <div className=" hidden items-center gap-4  md:flex mr-7">
+    
     <button className="text-sm font-medium bg-white px-4 py-2  shadow-[0px_0px_30px_7px] hover:shadow-[0px_0px_30px_14px] text-black rounded-full transition duration-300 hover:bg-slate-100 shadow-white/50 hover:shadow-white/50 "> SignIn</button>
     <button  className="text-sm font-medium bg-white px-5 py-2  shadow-[0px_0px_30px_7px] hover:shadow-[0px_0px_30px_14px] text-black rounded-full transition duration-300 hover:bg-slate-100 shadow-white/50 hover:shadow-white/50 "> LogIn</button>
+  
    </div>
 
 {/* mobile */}
@@ -45,17 +47,17 @@ const Navbar = () => {
 {/* mobile menu */}
 
 { MenuOpen && (
-    <div className="absolute top-full right-0 w-full items-center flex flex-col py-6 md:hidden space-y-4 z-50 rounded-b-3xl shadow-lg text-black" onClick={toggleMenu}>
+    <div className="absolute top-full right-0 w-full items-center flex flex-col py-6 md:hidden space-y-4 z-50 rounded-b-3xl shadow-lg text-black" >
   {navItems.map((item)=>(
-    <Link key={item.name} to={item.path}>
-    {item.name}
+    <Link key={item.name} to={item.path} onClick={toggleMenu}>
+    {item.name} 
     </Link>
   ))}
 <div className="flex gap-6 ">
-    <button className="font-medium px-5 py-2 rounded-full bg-gradient-to-l from-pink-600 to bg-cyan-600 text-black hover:shadow-[0px_0px_30px_14px] shadow- hover:shadow-blue-200  transition duration-300"  >
+    <button className="font-medium px-5 py-2 rounded-full bg-gradient-to-l from-pink-600 to-cyan-600 text-black hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_30px_7px] hover:shadow-blue-200  transition duration-300"  >
     SignIn
 </button>
-    <button className="font-medium px-5 py-2 rounded-full bg-gradient-to-l from-pink-600 to bg-cyan-600 text-black hover:shadow-[0px_0px_30px_14px] shadow- hover:shadow-blue-200  transition duration-300"  >
+    <button className="font-medium px-5 py-2 rounded-full bg-gradient-to-l from-pink-600 to-cyan-600 text-black hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_30px_7px] hover:shadow-blue-200  transition duration-300"  >
     LogIn
 </button>
 </div>
