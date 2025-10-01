@@ -1,17 +1,65 @@
 import React from 'react'
+import { assets } from '../assets/assets'
 
 const HeroSection = () => {
   return (
-    <div className='flex flex-col items-start justify-center px-6 md:px-16 lg:px-24 xl:px-32 text-black
-     bg-[url("/src/assets/Home_furnituer.webp")]
- bg-no-repeat bg-center bg-cover h-screen '>
-<p className='bg-[#49b9ff]/50 px-3.5 py-1 rounded-full mt-20  '> The Ultimate Hotel Experience</p>
-    <h1 className='font-Playfairr text-2xl md:text-5xl md:text-[56px] md:leading-[56px] font-bold md:font-extrabold max-w-xl mt-4 '> Discover Your Perfect Gateway Destination </h1>
-      <p> Unparalled luxury and comfoort await at the world's most exclusive hotels and resorts. Start your journey today. </p>
+    <section >
+      {/* Hero Section */}
+      <div className="flex flex-col justify-center px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 text-black 
+             min-h-[80vh] md:min-h-screen
+             bg-[url('/src/assets/Home_furnituer1.webp')] bg-no-repeat 
+             bg-cover sm:bg-top md:bg-center lg:bg-contain">
+        <p className="bg-[#49b9ff]/50 px-3.5 py-1 rounded-full  w-max text-sm sm:text-base">
+          Premium Furniture Collection
+        </p>
+        <h1 className="font-Playfairr text-3xl sm:text-4xl md:text-5xl lg:text-[56px] 
+                       md:leading-[56px] font-bold max-w-xl mt-4">
+          Redefine Comfort & Style for Your Home
+        </h1>
+      
+      </div>
 
+      {/* Delivery Details */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-xl mt-1 shadow-2xl mx-6 p-6 bg-amber-200 rounded-2xl">
+        {/* Feature 1 */}
+        <div className="flex items-start">
+          <img src={assets.shipping} alt="" className="w-12 h-12" />
+          <div className="flex flex-col ml-4">
+            <h3 className="font-bold text-lg">Free Shipping</h3>
+            <p className="text-sm text-gray-600">Free shipping for order above ₹10,000</p>
+          </div>
+        </div>
 
-    </div>
+        {/* Feature 2 */}
+        <div className="flex items-start ]">
+          <img src={assets.payment} alt="" className="w-12 h-12" />
+          <div className="flex flex-col ml-4">
+            <h3 className="font-bold text-lg">Flexible Payment</h3>
+            <p className="text-sm text-gray-600">Multiple secure payment options</p>
+          </div>
+        </div>
+
+        {/* Feature 3 */}
+        <div className="flex items-start">
+          <img src={assets.contact_support} alt="" className="w-12 h-12" />
+          <div className="flex flex-col ml-4">
+            <h3 className="font-bold text-lg">24x7 Support</h3>
+            <p className="text-sm text-gray-600">We support online all days</p>
+          </div>
+        </div>
+      </div>
+
+     <div className='mt-6'>
+      <h1 className='font-bold ml-8 text-3xl' > Featured products</h1>
+     </div>
+       <div className='flex '>
+
+       </div>
+
+    </section>
   )
 }
 
 export default HeroSection
+
+

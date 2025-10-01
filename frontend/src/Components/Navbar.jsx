@@ -8,7 +8,7 @@ const [isScrolled, setIsScrolled] = useState(false)
 
 useEffect(()=>{
 const HandelScroll = ()=>{
-    setIsScrolled(window.scrollY>50);
+    setIsScrolled(window.scrollY>0);
 }
 window.addEventListener("scroll", HandelScroll);
 return ()=> window.removeEventListener("scroll",HandelScroll)
@@ -18,7 +18,7 @@ return ()=> window.removeEventListener("scroll",HandelScroll)
     const [MenuOpen, setMenuOpen] = useState(false);
       const toggleMenu = () => setMenuOpen(!MenuOpen);
   return (
-    <nav className={`flex items-center justify-between  max-md:w-full top-0  px-6 py-4 rounded-2xl mx-2 font-bold relative  text-black  ${isScrolled ? "bg-transparent  text-black" :"bg-black text-white"}`}>
+    <nav className={`flex items-center justify-between  max-md:w-full top-0  px-6 py-4   font-bold relative  text-black  ${isScrolled ? "bg-[#839788]  text-black" :"bg-black text-white"}`}>
       {/* Logo */}
       <div>
         <img src={assets.Logo_1} alt="Logo" className="w-36 h-auto"  />
@@ -59,7 +59,7 @@ return ()=> window.removeEventListener("scroll",HandelScroll)
 {/* mobile menu */}
 
 { MenuOpen && (
-    <div className="absolute top-full right-0 w-full items-center flex flex-col py-6 md:hidden space-y-4 z-50 rounded-b-3xl shadow-lg text-black" >
+    <div className="absolute top-full right-0 w-full items-center flex flex-col py-6 md:hidden space-y-4 z-50 rounded-b-3xl shadow-lg text-black bg-white" >
   {navItems.map((item)=>(
     <Link key={item.name} to={item.path} onClick={toggleMenu}>
     {item.name} 
