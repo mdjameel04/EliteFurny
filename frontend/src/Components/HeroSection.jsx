@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import Feauters from './Feauters'
 
 const HeroSection = () => {
   return (
@@ -49,12 +50,10 @@ const HeroSection = () => {
         </div>
       </div>
 
-     <div className='mt-6'>
-      <h1 className='font-bold ml-8 text-3xl' > Featured products</h1>
+     <div className='mt-22 bg-white  '>
+      <h1 className='font-bold text-center mr-6 text-3xl ' > Featured products</h1>
      </div>
-       <div className='flex '>
-
-       </div>
+   <Feauters/>
 
     </section>
   )
