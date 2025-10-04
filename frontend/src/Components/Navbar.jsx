@@ -3,7 +3,7 @@ import { assets, navItems } from '../assets/assets'
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-
+ 
 const [isScrolled, setIsScrolled] = useState(false)
 
 useEffect(()=>{
@@ -18,7 +18,7 @@ return ()=> window.removeEventListener("scroll",HandelScroll)
     const [MenuOpen, setMenuOpen] = useState(false);
       const toggleMenu = () => setMenuOpen(!MenuOpen);
   return (
-    <nav className={`flex items-center justify-between  max-md:w-full top-0  px-6 py-4   font-bold relative  text-black  ${isScrolled ? "bg-[#839788]  text-black" :"bg-black text-white"}`}>
+    <nav className={`flex items-center justify-between  max-md:w-full top-0  px-8 py-4   font-bold relative  text-black  ${isScrolled ? "bg-[#839788]  text-black" :"bg-black text-white"}`}>
       {/* Logo */}
       <div>
         <img src={assets.Logo_1} alt="Logo" className="w-36 h-auto"  />
@@ -44,9 +44,12 @@ return ()=> window.removeEventListener("scroll",HandelScroll)
 
       {/* Sign In / Sign Up */}
    <div className=" hidden items-center gap-4  md:flex mr-7">
-    
+    <Link to="/signin">
     <button className="text-sm font-medium bg-white px-4 py-2  shadow-[0px_0px_30px_7px] hover:shadow-[0px_0px_30px_14px] text-black rounded-full transition duration-300 hover:bg-slate-100 shadow-white/50 hover:shadow-white/50 "> SignIn</button>
+    </Link>
+    <Link to='/login'>
     <button  className="text-sm font-medium bg-white px-5 py-2  shadow-[0px_0px_30px_7px] hover:shadow-[0px_0px_30px_14px] text-black rounded-full transition duration-300 hover:bg-slate-100 shadow-white/50 hover:shadow-white/50 "> LogIn</button>
+    </Link>
   
    </div>
 
@@ -66,6 +69,7 @@ return ()=> window.removeEventListener("scroll",HandelScroll)
     </Link>
   ))}
 <div className="flex gap-6 ">
+  
     <button className="font-medium px-5 py-2 rounded-full bg-gradient-to-l from-pink-600 to-cyan-600 text-black hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_30px_7px] hover:shadow-blue-200  transition duration-300"  >
     SignIn
 </button>

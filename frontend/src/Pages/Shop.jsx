@@ -1,5 +1,5 @@
 import React from 'react'
-import { assets } from '../assets/assets'
+import { assets, tabs } from '../assets/assets'
 import {Swiper, SwiperSlide} from "swiper/react"
 import "swiper/css";
 import "swiper/css/pagination";
@@ -25,7 +25,7 @@ const Shop = () => {
   
   
   return (
-    <div className='px-6 md:px-16 lg:px-24 py-12 bottom-0 top-0 '>
+    <div className='px-6 md:px-16 lg:px-24 py-2 bottom-0 top-0 bg-[#DADDD8] w-full '>
       <Swiper
    
   spaceBetween={30}
@@ -51,15 +51,27 @@ const Shop = () => {
   ))}
 </Swiper>
 
+<h1 className='font-bold text-3xl mx-16 sm:text-2xl mt-8'> explore our furnituer</h1>
  
-<div className='mt-8 w-full flex '>
-  {categories.map((item)=>(
+<div className='mt-8 w-full flex justify-center gap-16 '>
+  {/* {categories.map((item)=>(
     <div key={item.id} className='relative flex  items-center justify-center ml-8' >
     
     <img src={item.img} alt={item.name} className='w-56 md:w-64 z-10 object-cover relative' />
-    </div>
-  ))}
-</div>
+    </div> */}
+  {/* ))} */}
+  <div>
+  <img src={assets.chair} alt="" className='w-56 h-56 md:64 z-10 object-cover relative'/>
+   <div className=" w-72 h-72 md:w-80 md:h-80 rounded-full absolute"></div>
+  <h1 className='font-bold text-2xl text-center mt-4 '> tables</h1>
+  </div>
+  <div>
+  <img src={assets.table} alt="" className='w-56 h-56 md:64 z-10 object-cover relative mt-20  '/>
+  <h1 className='font-bold text-2xl text-center '>chair</h1>
+
+  </div>
+</div> 
+
 
 
 
