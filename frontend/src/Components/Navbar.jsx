@@ -68,14 +68,17 @@ return ()=> window.removeEventListener("scroll",HandelScroll)
     {item.name} 
     </Link>
   ))}
-<div className="flex gap-6 ">
-  
+<div className="flex gap-6 " onClick={toggleMenu }>
+  <Link to='/signin'>
     <button className="font-medium px-5 py-2 rounded-full bg-gradient-to-l from-pink-600 to-cyan-600 text-black hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_30px_7px] hover:shadow-blue-200  transition duration-300"  >
     SignIn
 </button>
+  </Link>
+  <Link to='/login'>
     <button className="font-medium px-5 py-2 rounded-full bg-gradient-to-l from-pink-600 to-cyan-600 text-black hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_30px_7px] hover:shadow-blue-200  transition duration-300"  >
     LogIn
 </button>
+  </Link>
 </div>
 
     </div>

@@ -61,9 +61,9 @@ const Shop = () => {
     </div> */}
   {/* ))} */}
   <div>
-  <img src={assets.chair} alt="" className='w-56 h-56 md:64 z-10 object-cover relative'/>
-   <div className=" w-72 h-72 md:w-80 md:h-80 rounded-full absolute"></div>
-  <h1 className='font-bold text-2xl text-center mt-4 '> tables</h1>
+  <img src={assets.chair} alt="" className='w-56 h-56 md:64 z-10 object-cover relative '/>
+   <div className=" w-72 h- md:w-55 md:h-55 rounded-full -translate-y-11/12  absolute bg-[#d57f16]  hidden md:block"></div>
+  <h1 className='font-bold text-2xl text-center mt-8 '> tables</h1>
   </div>
   <div>
   <img src={assets.table} alt="" className='w-56 h-56 md:64 z-10 object-cover relative mt-20  '/>
