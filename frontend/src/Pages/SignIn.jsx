@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { assets } from '../assets/assets'
 const SignIn = () => {
   return (
-    <div className=" min-h-screen flex items-center justify-center bg-[#f4f4f4] px-8 bg-[url('..\src\assets\Background-img.png')] "
+    <div className=" min-h-screen flex items-center justify-center  px-8 bg-[url('../src/assets/Login_img.png')] "
     // style={{
     // backgroundImage: `url(${assets.background_image})`,
     // backgroundSize: "cover",
@@ -11,7 +10,7 @@ const SignIn = () => {
 
     // }}
     >
-<div className="bg-transparent shadow-xl w-full max-w-md rounded-lg p-8">
+<div className="bg-white/40 shadow-xl w-full max-w-md rounded-lg p-8">
  <h2 className='text-3xl font-bold text-center mb-6 text-gray-800'> Sign In</h2>
 
  {/* form */}
