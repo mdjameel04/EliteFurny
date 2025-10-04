@@ -17,20 +17,20 @@ const SignIn = () => {
  {/* form */}
 <form className='space-y-5'>
     <div>
-        <label className='block text-gray-600 font-medium mb-2 ml-2'>Email </label>
-<input type="email" placeholder='Enter your email' className='w-full py-2 px-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#FF6B6B] focus:outline-none' required  />
+        <label className='block text-gray-600 font-medium mb-2 ml-2 sm:text-base'>Email </label>
+<input type="email" placeholder='Enter your email' className='w-full py-2 px-4 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#FF6B6B] focus:outline-none transition-all duration-200' required  />
     </div>
 
 <div> 
-<label className='block w-full text-gray-600 font-medium mb-2 ml-2 mt-2 '> password</label>
-<input type="password" placeholder='Enter your password' className='w-full border rounded-md px-4 py-2 border-gray-300 focus:ring-2 focus:ring-[#FF6B6B] focus:outline-none' required />
+<label className='block w-full text-gray-600 font-medium mb-2 ml-2 mt-2 sm:text-base '> password</label>
+<input type="password" placeholder='Enter your password' className='w-full border rounded-md px-4 py-2 border-gray-300 focus:ring-2 focus:ring-[#FF6B6B] focus:outline-none transition-all duration-200 ease-linear' required minLength={8} maxLength={12}/>
 </div>
 
 {/* remeber */}
 
 <div className='flex items-center justify-between text-sm text-gray-600'>
 <label className='flex items-center gap-2' >
-    <input type="checkbox" className='w-4 h-4' />
+    <input type="checkbox" className='w-4 h-4' required />
     Remember Me
 </label>
  <a href="#" className="text-[#FF6B6B] hover:underline"> Forgot password?  </a>
