@@ -15,7 +15,12 @@ import chair_img1 from './chair-img1.jpg'
 import chair_img2 from './chair-img2.jpg'
 import chair_img3 from './chair-img3.jpg'
 import chair_img4 from './chair-img4.png'
-
+import hero_img1 from './hero-img1.webp'
+import hero_img2 from './hero-img2.png'
+import hero_img3 from './hero-img3.png'
+import hero_img4 from './hero-img4.png'
+import chair from './chair-3d.png'
+import table from './table3d.png'
 
 export const assets= {
     logo,
@@ -28,10 +33,12 @@ export const assets= {
     Home_furnituer,
     sofa_img1, sofa_img2, sofa_img3,sofa_img4,sofa_img5,
     chair_img1, chair_img2, chair_img3, chair_img4, 
+    hero_img1,hero_img2,hero_img3, hero_img4,
+    chair,table
 } 
 
 export const navItems = [
- {name : "Home" , path:'/Home'},
+ {name : "Home" , path:'/'},
  {name : "Shop" , path:'/Shop'},
 {name : "About Us" , path:'/About'},
 {name : "Blog" , path:'/Blog'},    
@@ -68,5 +75,4 @@ export const products= {
         {name : "Minimalist Sofa", img : assets.sofa_img4},
     ]
 }
-
 

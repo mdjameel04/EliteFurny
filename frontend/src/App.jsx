@@ -13,7 +13,7 @@ const App = () => {
 
       {/* Routes define what changes based on URL */}
       <Routes>
-        <Route path="/Home" element={<Home/>} />   
+        <Route path="/" element={<Home/>} />   
         <Route path="/about" element={<About />} />    
         <Route path='/shop' element={<Shop/>} /> 
       </Routes>

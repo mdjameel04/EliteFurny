@@ -33,7 +33,7 @@ const Home = () => {
 
         {/* Feature 2 */}
         <div className="flex items-start ]">
-          <img src={assets.Home_furnituer} alt="" className="w-12 h-12" />
+          <img src={assets.payment} alt="" className="w-12 h-12" />
           <div className="flex flex-col ml-4">
             <h3 className="font-bold text-lg">Flexible Payment</h3>
             <p className="text-sm text-gray-600">Multiple secure payment options</p>
