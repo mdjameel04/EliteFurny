@@ -17,9 +17,9 @@ const Feauters = () => {
         {products[ActiveTab].map((item, index) => (
           <div
             key={index}
-            className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition"
+            className="bg- shadow-md rounded-lg overflow-hidden hover:shadow-xl transition"
           >
-            <img src={item.img} alt={item.name} className="w-full h-48 object-cover" />
+            <img src={item.img} alt={item.name} className=" h-96   object-cover bg-top" />
             <div className="p-4">
               <h3 className="font-bold text-lg">{item.name}</h3>
               <p className="text-sm text-gray-600">Elegant & durable design</p>

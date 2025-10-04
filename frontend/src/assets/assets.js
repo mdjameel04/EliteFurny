@@ -11,6 +11,10 @@ import sofa_img2 from './sofa-img2.png'
 import sofa_img3 from './sofa-img3.png'
 import sofa_img4 from './sofa-img4.png'
 import sofa_img5 from './sofa-img5.png'
+import chair_img1 from './chair-img1.jpg'
+import chair_img2 from './chair-img2.jpg'
+import chair_img3 from './chair-img3.jpg'
+import chair_img4 from './chair-img4.png'
 
 
 export const assets= {
@@ -22,11 +26,12 @@ export const assets= {
     contact_support,
     shipping,
     Home_furnituer,
-    sofa_img1, sofa_img2, sofa_img3,sofa_img4,sofa_img5
-}
+    sofa_img1, sofa_img2, sofa_img3,sofa_img4,sofa_img5,
+    chair_img1, chair_img2, chair_img3, chair_img4, 
+} 
 
 export const navItems = [
- {name : "Home" , path:'/'},
+ {name : "Home" , path:'/Home'},
  {name : "Shop" , path:'/Shop'},
 {name : "About Us" , path:'/About'},
 {name : "Blog" , path:'/Blog'},    
@@ -44,20 +49,20 @@ export const products= {
 
     arrival: [
         {name : "Modern Sofa", img : assets.sofa_img1},
-        {name : "classic Sofa", img : assets.sofa_img2},
+        {name : "classic Sofa", img : assets.chair_img1},
         {name : "Special Sofa", img : assets.sofa_img3},
-        {name : "Minimalist Sofa", img : assets.sofa_img4},
+        {name : "Minimalist Sofa", img : assets.chair_img2},
         {name : "new collection Sofa", img : assets.sofa_img5},
     ],
      best: [
-        {name : "Modern Sofa", img : assets.sofa_img1},
-        {name : "classic Sofa", img : assets.sofa_img2},
-        {name : "Special Sofa", img : assets.sofa_img3},
+        {name : "Modern Sofa", img : assets.sofa_img2},
+        {name : "classic Sofa", img : assets.chair_img2},
+        {name : "Special Sofa", img : assets.sofa_img4 },
 
         
     ],
      coming: [
-        {name : "Modern Sofa", img : assets.sofa_img1},
+        {name : "Modern Sofa", img : assets.chair_img4},
         {name : "classic Sofa", img : assets.sofa_img2},
         {name : "Special Sofa", img : assets.sofa_img3},
         {name : "Minimalist Sofa", img : assets.sofa_img4},
