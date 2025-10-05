@@ -25,6 +25,9 @@ import background_image from './Background-img.png'
 import cat_img1 from './cat-img1.png'
 import cat_img2 from './cat-img2.png'
 import cat_img3 from './cat-img3.png'
+import cat_img4 from './cat-img4.png'
+import cat_img5 from './cat-img5.png'
+
 export const assets= {
     logo,
     menu,
@@ -38,7 +41,7 @@ export const assets= {
     chair_img1, chair_img2, chair_img3, chair_img4, 
     hero_img1,hero_img2,hero_img3, hero_img4,
     chair,table, background_image,
-    cat_img1,cat_img2,cat_img3
+    cat_img1,cat_img2,cat_img3,cat_img4,cat_img5
 } 
 
 export const navItems = [

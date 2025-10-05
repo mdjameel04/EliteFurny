@@ -6,8 +6,10 @@ const Home = () => {
 
 const categories =[
   {id:1, name: "sofa", Image: assets.cat_img1, },
-  {id:2, name: "sofa", Image: assets.cat_img2, },
-  {id:3, name: "sofa", Image: assets.cat_img3, }
+  {id:2, name: "chair", Image: assets.cat_img2, },
+  {id:3, name: "lamp", Image: assets.cat_img3, },
+  {id:4, name: "smart Tv", Image: assets.cat_img4, },
+  {id:5, name: "table", Image: assets.cat_img5, }
 ]
 
   return (
@@ -66,12 +68,13 @@ const categories =[
     <h1 className='text-3xl font-bold ml-[6%]'> Categiores</h1>
    </div>
 
-   <div className='flex items center gap-12 mt-10'>
+   <div className='flex items center gap-12 mt-10 justify-evenly'>
    {categories.map((item)=>(
     <div key={item.id} className='flex flex-col items-center text-gray-700 hover:text-black transition'>
-    <div className="bg-gray-100 p-6 rounded-full shadow-md">
-      {item.Image}
+    <div className="bg-gray-100 p-6 rounded-full shadow-md ">
+      <img src={item.Image} alt="" className='flex w-20 h-20' />
     </div>
+    <p>{item.name      } </p>
     </div>
    ))}
    </div>

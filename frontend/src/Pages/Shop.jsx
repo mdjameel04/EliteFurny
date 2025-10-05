@@ -66,9 +66,7 @@ const Shop = () => {
   <h1 className='font-bold text-2xl text-center mt-8 '>Modren tables</h1>
   </div>
   <div>
-  <img src={assets.table} alt="" className='w-56 h-56 md:64 z-10 object-cover relative mt-20  '/>
-  <div className='w-64 h-64 md:w-56 md:h-56 rounded-full bg-purple-500 -translate-y-[100%] absolute hidden md:block '></div>
-   <h1 className='font-bold text-2xl text-center '>Classic chair</h1>
+  <img src={assets.table} alt="" className='w-56 h-56 md:64 z-10 object-cover relative mt-20  '/>   <h1 className='font-bold text-2xl text-center '>Classic chair</h1>
 
   </div>
 </div> 
