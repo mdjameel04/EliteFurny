@@ -22,7 +22,9 @@ import hero_img4 from './hero-img4.png'
 import chair from './chair-3d.png'
 import table from './table3d.png'
 import background_image from './Background-img.png'
-
+import cat_img1 from './cat-img1.png'
+import cat_img2 from './cat-img2.png'
+import cat_img3 from './cat-img3.png'
 export const assets= {
     logo,
     menu,
@@ -35,7 +37,8 @@ export const assets= {
     sofa_img1, sofa_img2, sofa_img3,sofa_img4,sofa_img5,
     chair_img1, chair_img2, chair_img3, chair_img4, 
     hero_img1,hero_img2,hero_img3, hero_img4,
-    chair,table, background_image
+    chair,table, background_image,
+    cat_img1,cat_img2,cat_img3
 } 
 
 export const navItems = [

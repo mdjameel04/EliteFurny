@@ -3,6 +3,13 @@ import { assets } from '../assets/assets'
 import Feauters from '../Components/Feauters'
 
 const Home = () => {
+
+const categories =[
+  {id:1, name: "sofa", Image: assets.cat_img1, },
+  {id:2, name: "sofa", Image: assets.cat_img2, },
+  {id:3, name: "sofa", Image: assets.cat_img3, }
+]
+
   return (
     <section >
       {/* Hero Section */}
@@ -55,6 +62,19 @@ const Home = () => {
      </div>
    <Feauters/>
 
+   <div className='mt-6'>
+    <h1 className='text-3xl font-bold ml-[6%]'> Categiores</h1>
+   </div>
+
+   <div className='flex items center gap-12 mt-10'>
+   {categories.map((item)=>(
+    <div key={item.id} className='flex flex-col items-center text-gray-700 hover:text-black transition'>
+    <div className="bg-gray-100 p-6 rounded-full shadow-md">
+      {item.Image}
+    </div>
+    </div>
+   ))}
+   </div>
     </section>
   )
 }
