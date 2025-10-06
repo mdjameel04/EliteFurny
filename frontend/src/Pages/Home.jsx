@@ -1,6 +1,7 @@
 import React from 'react'
 import { assets } from '../assets/assets'
 import Feauters from '../Components/Feauters'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -64,20 +65,86 @@ const categories =[
      </div>
    <Feauters/>
 
-   <div className='mt-6'>
-    <h1 className='text-3xl font-bold ml-[6%]'> Categiores</h1>
-   </div>
+<div className="mt-6 bg-gray-300 rounded-2xl px-6 py-8">
+  <h1 className="text-3xl font-bold mb-8 text-center">Categories</h1>
 
-   <div className='flex items center gap-12 mt-10 justify-evenly'>
-   {categories.map((item)=>(
-    <div key={item.id} className='flex flex-col items-center text-gray-700 hover:text-black transition'>
-    <div className="bg-gray-100 p-6 rounded-full shadow-md ">
-      <img src={item.Image} alt="" className='flex w-20 h-20' />
+  <div className="flex gap-6 overflow-x-auto sm:overflow-visible sm:justify-evenly sm:flex-wrap scrollbar-hide">
+    {categories.map((item) => (
+      <div
+        key={item.id}
+        className="flex flex-col items-center text-gray-700 hover:text-black transition duration-200 min-w-[100px]"
+      >
+        <div className="bg-amber-400 p-6 rounded-full shadow-md">
+          <img
+            src={item.Image}
+            alt={item.name}
+            className="w-20 h-20 object-contain"
+          />
+        </div>
+        <p className="mt-2 font-medium">{item.name}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+{/* <div className="mt-12 px-6 sm:px-12 lg:px-24">
+  <h2 className="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="bg-white p-6 rounded-xl shadow-md">
+      <p className="text-gray-600 italic">"EliteFurny transformed my living room. Super comfy and stylish!"</p>
+      <h4 className="mt-4 font-semibold">— Sarah J.</h4>
     </div>
-    <p>{item.name      } </p>
+    <div className="bg-white p-6 rounded-xl shadow-md">
+      <p className="text-gray-600 italic">"Best quality furniture I’ve ever bought. Worth every rupee!"</p>
+      <h4 className="mt-4 font-semibold">— Rajesh K.</h4>
     </div>
-   ))}
-   </div>
+    <div className="bg-white p-6 rounded-xl shadow-md">
+      <p className="text-gray-600 italic">"Fast delivery and great support. Highly recommend!"</p>
+      <h4 className="mt-4 font-semibold">— Ayesha N.</h4>
+    </div>
+  </div>
+</div> */}
+
+{/* footer */}
+
+<footer className='bg-gray-900 text-gray-300 mt-12 px-6 sm"px-12 lg:px-24 py-12 '>
+  <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+
+{/* brand */}
+ <div>
+<h1 className='text-2xl font-bold text-white'> Elite Furny</h1>
+<p className='mt-3 text-sm text-gray-400'> Redefining comfort & style for your home with premium quality furniture </p>
+ </div>
+
+{/* quick link  */}
+<div>
+  <h3 className='text-lg font-semibold text-white mb-3'> stay updated</h3>
+  <ul className='space-y-2 text-sm'>
+<li> <Link to={"/shop"} className='hover:text-amber-400 hover:underline'>shop</Link></li>
+<li> <Link to={"/about"} className='hover:text-amber-400 hover:underline'>About</Link></li>
+<li> <Link to={"/contact"} className='hover:text-amber-400 hover:underline'>Contact</Link></li>
+  </ul>
+</div>
+<div>
+ <h3 className="text-lg font-semibold text-white mb-3">Stay Updated</h3>
+      <p className="text-sm text-gray-400 mb-4">Subscribe to get the latest deals & updates</p>
+      <div className="flex gap-2">
+        <input 
+          type="email" 
+          placeholder="Enter your email" 
+          className="px-3 py-2 rounded-l-lg w-full border border-white rounded-lg  focus:outline-none focus:ring-amber-400 text-gray-800"
+        />
+        <button className="bg-amber-500 hover:bg-amber-600 px-4 rounded-r-lg text-white">
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+
+</footer>
     </section>
   )
 }
