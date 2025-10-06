@@ -6,6 +6,7 @@ import Home from './Pages/Home'
 import Shop from './Pages/Shop'
 import SignIn from './Pages/SignIn'
 import Login from './Pages/Login'
+import Contact from './Pages/Contact'
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
         <Route path='/shop' element={<Shop/>} /> 
         <Route path='/signin' element={<SignIn/>} />
         <Route path='/login' element={<Login/>}/>
+        <Route path='/Contact' element={<Contact/>}/>
+
       </Routes>
     </div>
   )
