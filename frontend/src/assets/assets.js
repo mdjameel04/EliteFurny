@@ -27,6 +27,17 @@ import cat_img2 from './cat-img2.png'
 import cat_img3 from './cat-img3.png'
 import cat_img4 from './cat-img4.png'
 import cat_img5 from './cat-img5.png'
+import funry1 from './Furny-img1.png'
+import funry2 from './Furny-img2.png'
+import funry3 from './Furny-img3.png'
+import funry4 from './Furny-img4.png'
+import funry5 from './Furny-img5.png'
+import funry6 from './Furny-img6.png'
+import funry7 from './Furny-img7.png'
+import funry8 from './Furny-img8.png'
+import funry9 from './Furny-img9.png'
+import funry10 from './Furny-img10.png'
+
 
 export const assets= {
     logo,
@@ -41,7 +52,8 @@ export const assets= {
     chair_img1, chair_img2, chair_img3, chair_img4, 
     hero_img1,hero_img2,hero_img3, hero_img4,
     chair,table, background_image,
-    cat_img1,cat_img2,cat_img3,cat_img4,cat_img5
+    cat_img1,cat_img2,cat_img3,cat_img4,cat_img5,
+    funry1, funry2, funry3, funry4, funry5, funry6, funry7, funry8, funry9, funry10
 } 
 
 export const navItems = [
