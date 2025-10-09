@@ -3,17 +3,17 @@ import { Swiper,SwiperSlide } from 'swiper/react'
 import { FaHome} from 'react-icons/fa'
 import {MdRestaurantMenu} from "react-icons/md"
 import { Link } from 'react-router-dom'
-import { EffectCoverflow, Autoplay } from 'swiper/modules'
+import { EffectCoverflow,  } from 'swiper/modules'
 import { assets } from '../assets/assets'
 
 const About = () => {
    const Slide = [
-    {id:1, Image:assets.funry1},{id:7, Image:assets.funry7},
-    {id:2, Image:assets.funry2},{id:8, Image:assets.funry8},
-    {id:3, Image:assets.funry3},{id:9, Image:assets.funry9},
-    {id:4, Image:assets.funry4},{id:10, Image:assets.funry10},
-    {id:5, Image:assets.funry5},
-    {id:6, Image:assets.funry6},
+    {id:1, Image:assets.funry1},{id:2, Image:assets.funry7},
+    {id:3, Image:assets.funry2},{id:4, Image:assets.funry8},
+    {id:5, Image:assets.funry3},{id:6, Image:assets.funry9},
+    {id:7, Image:assets.funry4},{id:8, Image:assets.funry10},
+    {id:9, Image:assets.funry5}, {id:10, Image:assets.funry6},
+   
    ]
   return (
     <section className="bg-[bisque] p-4"   > 
@@ -121,7 +121,7 @@ const About = () => {
 {/* left side */}
 
 <div className='w-1/2 flex justify-center'>
-<img src={assets.funry2} alt="" className='w-[90%] md:w-[350px] lg-[450px] rounded-xl shadow-2xl object-cover ' />
+<img src={assets.funry2} alt="" className='w-[90%] md:w-[350px] lg:w-[450px] rounded-xl shadow-2xl object-cover ' />
 </div>
 
 {/* right */}
@@ -136,9 +136,53 @@ const About = () => {
 </div>
 </div>
 
-  {/* about our  */}
+  {/* about our customers */}
+<div className='mt-8'>
+   <h1 className='text-2xl md:text-3xl font-medium text-center'> What Our customers are saying</h1>
+ <p className='text-sm text-gray-600 mt-2 text-center'> Real reviews from customers across the city</p>
+</div>
 
+ <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {/* Single Review */}
+    <div className="bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center text-center">
+      <img 
+        src={assets.customer1} 
+        alt="Customer 1" 
+        className="w-16 h-16 rounded-full mb-4 object-cover" 
+      />
+      <p className="text-gray-700 text-sm md:text-base mb-3">
+        "EliteFurny transformed my living room! The quality and style are unmatched."
+      </p>
+      <h3 className="font-bold text-gray-800">Sarah K.</h3>
+      <span className="text-yellow-400">★★★★★</span>
+    </div>
 
+    <div className="bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center text-center">
+      <img 
+        src={assets.customer2} 
+        alt="Customer 2" 
+        className="w-16 h-16 rounded-full mb-4 object-cover" 
+      />
+      <p className="text-gray-700 text-sm md:text-base mb-3">
+        "Amazing craftsmanship. Every piece feels premium and cozy!"
+      </p>
+      <h3 className="font-bold text-gray-800">James L.</h3>
+      <span className="text-yellow-400">★★★★★</span>
+    </div>
+
+    <div className="bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center text-center">
+      <img 
+        src={assets.customer3} 
+        alt="Customer 3" 
+        className="w-16 h-16 rounded-full mb-4 object-cover" 
+      />
+      <p className="text-gray-700 text-sm md:text-base mb-3">
+        "Fast delivery and beautiful design! I love my new furniture."
+      </p>
+      <h3 className="font-bold text-gray-800">Priya M.</h3>
+      <span className="text-yellow-400">★★★★★</span>
+    </div>
+  </div>
 
     </section>
   )

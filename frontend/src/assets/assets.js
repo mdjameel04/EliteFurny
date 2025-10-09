@@ -37,6 +37,9 @@ import funry7 from './Furny-img7.png'
 import funry8 from './Furny-img8.png'
 import funry9 from './Furny-img9.png'
 import funry10 from './Furny-img10.png'
+import customer1 from './customer1.png'
+import customer2 from './customer2.png'
+import customer3 from './customer3.png'
 
 
 export const assets= {
@@ -53,7 +56,8 @@ export const assets= {
     hero_img1,hero_img2,hero_img3, hero_img4,
     chair,table, background_image,
     cat_img1,cat_img2,cat_img3,cat_img4,cat_img5,
-    funry1, funry2, funry3, funry4, funry5, funry6, funry7, funry8, funry9, funry10
+    funry1, funry2, funry3, funry4, funry5, funry6, funry7, funry8, funry9, funry10,
+    customer1, customer2, customer3
 } 
 
 export const navItems = [
