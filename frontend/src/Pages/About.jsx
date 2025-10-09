@@ -34,7 +34,7 @@ const About = () => {
 
 <div className='flex items-center justify-center'>
   <Link to={'/shop'}>
-<button className='flex items-center gap-2 bg-gradient-to-l bg-pink-600 to-blue-400 rounded-2xl px-4 py-2 mt-4 font-medium'>
+<button className='flex items-center gap-2 bg-gradient-to-l bg-pink-600 to-blue-400 rounded-2xl px-4 py-2 mt-4 font-medium cursor-pointer hover:opacity-95 transition'>
   <MdRestaurantMenu/>  Explore It
 </button>
   </Link>
@@ -44,44 +44,101 @@ const About = () => {
 
 {/* images */}
 
-   <div className="w-full flex justify-center items-center bg-gradient-to-b from-white to-bisque py-14">
-  <Swiper
-    modules={[EffectCoverflow, Autoplay]}
-    effect="coverflow"
-    grabCursor={true}
-    centeredSlides={true}
-    
-    loop={true}
-    autoplay={{
-      delay: 2500,
-      disableOnInteraction: false,
-    }}
-    slidesPerView={3} // 👈 cleaner layout: left, center, right
-    spaceBetween={-60} // 👈 overlaps for natural flow
-    coverflowEffect={{
-      rotate: 0,
-      stretch: 0,
-      depth: 250,
-      modifier: 2.5,
-      scale: 0.9,
-      slideShadows: false,
-    }}
-    className="w-[90%] max-w-6xl"
-  >
-    {Slide.map((item) => (
-      <SwiperSlide
-        key={item.id}
-        className="!w-[320px] !h-[220px] flex justify-center items-center transition-all duration-500 ease-in-out"
+      <div className="w-full flex justify-center items-center py-10 bg-gray-900 mt-4 rounded-2xl ">
+      <Swiper
+        modules={[EffectCoverflow]}
+        effect="coverflow"
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView="auto"
+        coverflowEffect={{
+          rotate: 20,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          scale: 0.8,
+          slideShadows: true,
+        }}
+        className="w-[90%] max-w-6xl"
       >
-        <img
-          src={item.Image}
-          alt=""
-          className="w-full h-full object-cover rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.2)] transition-all duration-700 ease-in-out hover:scale-105"
-        />
-      </SwiperSlide>
-    ))}
-  </Swiper>
+        {Slide.map((item) => (
+          <SwiperSlide
+            key={item.id}
+            className="!w-[300px] !h-[400px] flex flex-col justify-end items-center relative"
+          >
+            <img
+              src={item.Image}
+              alt=""
+              className="w-full h-full object-cover rounded-xl shadow-2xl"
+            />
+          
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+
+   <div className='flex flex-col md:flex-row items-center justify-between px-6 md:px-16 mt-8 gap-8'>
+
+   {/* left side */}
+   
+    <div className='md:w-1/2 text-center md:text-left  '>
+   <h1 className='font-bold text-2xl md:text-3xl italic mb-3 leading-snug' > Where Style Meets Comfort — Designed for the Home You <span className='text-red-500'>Love</span> </h1>
+  <p className='text-gray-800 text-sm md:text-base leading-relaxed'>  EliteFurny brings together elegant design and expert craftsmanship to deliver furniture that tells your story. Whether it’s a cozy sofa for your living room or a statement piece for your workspace, our creations add a touch of luxury and lasting comfort to every corner of your home.</p>
+
+   <div className='flex justify-center md:justify-start gap-6 mt-6 '>
+  
+  <div>
+    <h1 className='text-2xl font-bold text-gray-800'> 5k+</h1>
+    <p> Satisfied Customer</p>
+    </div>   
+ <div>
+    <h1 className='text-2xl font-bold text-gray-800'> 5k+</h1>
+    <p> Unique Design</p>
+    </div> 
+
+    <div>
+    <h1 className='text-2xl font-bold text-gray-800'> 50+</h1>
+    <p> Expert Artisans</p>
+    </div>   
+   </div>  
+   </div>
+   
+ 
+
+   {/* right side */}
+
+<div className='md:w-1/2 flex justify-center'>
+<img src={assets.funry1} alt=""  className='w-[90%] md:w-[350px] lg:w-[450px] rounded-2xl shadow-2xl object-cover '/>
 </div>
+
+   </div>
+
+   <h2 className='text-2xl md:text-3xl text-center font-bold mt-8 underline decoration-red-500 underline-offset-4'> Why We Exist ? </h2>
+
+<div className='flex flex-col md:flex-row items-center justify-between px-6 md:px-16 mt-8 gap-8'>
+
+{/* left side */}
+
+<div className='w-1/2 flex justify-center'>
+<img src={assets.funry2} alt="" className='w-[90%] md:w-[350px] lg-[450px] rounded-xl shadow-2xl object-cover ' />
+</div>
+
+{/* right */}
+
+<div className='w-1/2 text-center md:text-left rounded-2xl bg-white/40 backdrop-blur-md  shadow-2xl p-6'>
+<h3 className='text-2xl italic font-medium'> Crafted with purpose, Built for <span className='font-bold'>Life</span></h3>
+
+<p className='text-sm text-gray-700 md:text-base leading-relaxed mt-2'> At <span className="font-semibold text-red-500">EliteFurny</span>, we exist to bring life into every home 
+      through furniture that reflects beauty, comfort, and care. 
+       Our mission isn’t just to design furniture — it’s to craft experiences 
+      that make your space truly feel like <span className="italic">yours</span>: personal, welcoming, and timeless.</p>
+</div>
+</div>
+
+  {/* about our  */}
+
+
 
     </section>
   )
