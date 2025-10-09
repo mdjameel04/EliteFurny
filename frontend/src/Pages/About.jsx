@@ -142,7 +142,7 @@ const About = () => {
  <p className='text-sm text-gray-600 mt-2 text-center'> Real reviews from customers across the city</p>
 </div>
 
- <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+ <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
     {/* Single Review */}
     <div className="bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center text-center">
       <img 
@@ -157,7 +157,7 @@ const About = () => {
       <span className="text-yellow-400">★★★★★</span>
     </div>
 
-    <div className="bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center text-center">
+    <div className="bg-white p-6 rounded-2xl shadow-2xl flex flex-col items-center text-center ">
       <img 
         src={assets.customer2} 
         alt="Customer 2" 
