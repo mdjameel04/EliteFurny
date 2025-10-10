@@ -166,7 +166,7 @@ const About = () => {
       <p className="text-gray-700 text-sm md:text-base mb-3">
         "Amazing craftsmanship. Every piece feels premium and cozy!"
       </p>
-      <h3 className="font-bold text-gray-800">James L.</h3>
+      <h3 className="font-bold text-gray-800">james</h3>
       <span className="text-yellow-400">★★★★★</span>
     </div>
 
@@ -179,8 +179,40 @@ const About = () => {
       <p className="text-gray-700 text-sm md:text-base mb-3">
         "Fast delivery and beautiful design! I love my new furniture."
       </p>
-      <h3 className="font-bold text-gray-800">Priya M.</h3>
+      <h3 className="font-bold text-gray-800">Priya </h3>
       <span className="text-yellow-400">★★★★★</span>
+    </div>
+
+    <div className='bg-white p-6 rounded-2xl shadow-2xl  flex-col items-center text-center hidden md:flex'>
+  <img 
+        src={assets.customer1} 
+        alt="Customer 3" 
+        className="w-16 h-16 rounded-full mb-4 object-cover" 
+      />
+      <p className='text-gray-700 text-sm md:text-base mb-3'>“EliteFurny transformed my living space with elegance and comfort. The craftsmanship is amazing — every piece feels personal and unique.” </p>
+      <h3 className='text-gray-800 font-bold'> Arjun mehtha</h3>
+      <span className="text-yellow-400">★★★★</span>
+    </div>
+
+ <div className='bg-white p-6 rounded-2xl shadow-2xl  flex-col items-center text-center hidden md:flex '>
+  <img 
+        src={assets.customer1} 
+        alt="Customer 3" 
+        className="w-16 h-16 rounded-full mb-4 object-cover" 
+      />
+      <p className='text-gray-700 text-sm md:text-base mb-3'>“I love how every detail is thoughtfully made. My EliteFurny dining table has become the heart of my home — stylish, sturdy, and timeless.” </p>
+      <h3 className='text-gray-800 font-bold'> venu</h3>
+      <span className="text-yellow-400">★★★★</span>
+    </div>
+     <div className='bg-white p-6 rounded-2xl shadow-2xl  flex-col items-center text-center hidden md:flex'>
+  <img 
+        src={assets.customer1} 
+        alt="Customer 3" 
+        className="w-16 h-16 rounded-full mb-4 object-cover" 
+      />
+      <p className='text-gray-700 text-sm md:text-base mb-3'> “Exceptional quality and service! EliteFurny helped me pick the perfect sofa — it’s both modern and comfortable. Highly recommended!” </p>
+      <h3 className='text-gray-800 font-bold'> sneha verma</h3>
+      <span className="text-yellow-400">★★★★</span>
     </div>
   </div>
 
