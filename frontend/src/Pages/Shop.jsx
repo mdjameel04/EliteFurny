@@ -85,7 +85,7 @@ const Shop = () => {
 
 
 <h1 className='font-bold text-2xl md:text-3xl text-center mt-8 relative inline-block text-gray-700 mb-4' > <span className='text-gray-500'> All</span> Products
-   <span class="absolute left-0 bottom-0 w-full h-1 bg-gradient-to-r from-pink-500 to-red-500 rounded"></span>
+   <span className="absolute left-0 bottom-0 w-full h-1 bg-gradient-to-r from-pink-500 to-red-500 rounded"></span>
 </h1>
 
 <div className='bg-white px-6 py-12 md:px-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6 mt-2'>
@@ -104,6 +104,12 @@ const Shop = () => {
 ))}
 </div>
 
+<div className=' flex items-center mt-2 justify-center '>
+  <hr className='flex-grow border-red-500 mt-2 border-t-4 ' />
+<h1 className=' px-2 text-gray-900 text-2xl font-bold'> Coming Soon</h1>
+  <hr className='flex-grow border-red-500 mt-2 border-t-4 '/>
+
+</div>
     </section>
   )
 }

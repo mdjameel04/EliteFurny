@@ -17,8 +17,8 @@ const categories =[
     <section >
       {/* Hero Section */}
       <div className="flex flex-col justify-center px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 text-black 
-             min-h-[80vh] md:min-h-screen
-             bg-[url('/src/assets/Home_furnituer1.webp')] bg-no-repeat 
+             min-h-[80vh] md:min-h-screen bg-[url('/src/assets/Home_furnituer.png')]
+             sm:bg-[url('/src/assets/Home_furnituer1.webp')] bg-no-repeat 
              bg-cover sm:bg-top md:bg-center lg:bg-contain">
         <p className="bg-[#49b9ff]/50 px-3.5 py-1 rounded-full  w-max text-sm sm:text-base">
           Premium Furniture Collection
