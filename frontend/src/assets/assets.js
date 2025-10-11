@@ -41,9 +41,23 @@ import customer1 from './customer1.png'
 import customer2 from './customer2.png'
 import customer3 from './customer3.png'
 import promtion from './promotion.png'
+import productimg1 from './product-img1.jpg'
+import productimg2 from './product-img2.png'
+import productimg3 from './product-img3.avif'
+import productimg4 from './product-img4.avif'
+import productimg5 from './product-img5.avif'
+import productimg6 from './product-img6.avif'
+import productimg7 from './product-img7.avif'
+import productimg8 from './product-img8.avif'
+import productimg9 from './product-img9.avif'
+import productimg10 from './product-img10.avif'
+import productimg11 from './product-img11.avif'
+import productimg12 from  './product-img12.avif'
+import productimg13 from   './product-img13.avif'
+import productimg14 from  './product-img14.avif'
+import productimg15 from  './product-img15.avif'
 
-
-export const assets= {
+ export const assets= {
     logo,
     menu,
     Logo_1,
@@ -59,7 +73,8 @@ export const assets= {
     cat_img1,cat_img2,cat_img3,cat_img4,cat_img5,
     funry1, funry2, funry3, funry4, funry5, funry6, funry7, funry8, funry9, funry10,
     customer1, customer2, customer3,
-    promtion
+    promtion,
+    productimg1,productimg2, productimg3, productimg4, productimg5, productimg6, productimg7,productimg8,productimg9, productimg10,productimg11, productimg12, productimg13,productimg14, productimg15
 } 
 
 export const navItems = [

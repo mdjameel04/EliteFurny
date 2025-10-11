@@ -74,7 +74,7 @@ const categories =[
         key={item.id}
         className="flex flex-col items-center text-gray-700 hover:text-black transition duration-200 min-w-[100px]"
       >
-        <div className="bg-amber-400 p-6 rounded-full shadow-md">
+        <div className="bg-amber-400 p-6 rounded-full shadow-md cursor-pointer">
           <img
             src={item.Image}
             alt={item.name}
@@ -88,25 +88,7 @@ const categories =[
 </div>
 
 
-{/* <div className="mt-12 px-6 sm:px-12 lg:px-24">
-  <h2 className="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <div className="bg-white p-6 rounded-xl shadow-md">
-      <p className="text-gray-600 italic">"EliteFurny transformed my living room. Super comfy and stylish!"</p>
-      <h4 className="mt-4 font-semibold">— Sarah J.</h4>
-    </div>
-    <div className="bg-white p-6 rounded-xl shadow-md">
-      <p className="text-gray-600 italic">"Best quality furniture I’ve ever bought. Worth every rupee!"</p>
-      <h4 className="mt-4 font-semibold">— Rajesh K.</h4>
-    </div>
-    <div className="bg-white p-6 rounded-xl shadow-md">
-      <p className="text-gray-600 italic">"Fast delivery and great support. Highly recommend!"</p>
-      <h4 className="mt-4 font-semibold">— Ayesha N.</h4>
-    </div>
-  </div>
-</div> */}
 
-{/* footer */}
 
 
     </section>
