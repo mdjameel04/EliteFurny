@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { assets } from "../assets/assets";
 
 const Contact = () => {
   return (
@@ -9,9 +10,9 @@ const Contact = () => {
         <div>
           {/* Image + Socials */}
           <div className="relative mb-8">
-            <div className="relative w-full h-60 rounded-2xl overflow-hidden custom-cut">
+            <div className="relative w-full h-full rounded-2xl overflow-hidden custom-cut">
               <img
-                src="/src/assets/contact_banner.webp"
+                src={assets.chair_img3}
                 alt="Decor showcase"
                 className="w-full h-full object-cover"
               />
@@ -77,7 +78,7 @@ const Contact = () => {
             <textarea placeholder="Leave us a message..." rows="4" className="p-3 border rounded-md w-full outline-none focus:ring-2 focus:ring-amber-400"></textarea>
 
             <div className="flex items-start gap-2">
-              <input type="checkbox" className="mt-1" />
+              <input type="checkbox"  className="mt-1" required />
               <label className="text-sm text-gray-600">
                 You agree to our friendly <span className="text-blue-500 underline">privacy policy</span>.
               </label>

@@ -228,19 +228,21 @@ const About = () => {
     </p>
 
     {/* email form */}
+    <form >
     <div className='flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3'>
       <input
         type='email'
         placeholder='Enter Your Email'
         className='px-4 py-2 w-full sm:w-64 border border-gray-400 rounded-2xl focus:outline-none focus:ring-2 focus:ring-rose-400'
-      />
+        />
       <button
         type='submit'
         className='px-6 py-2 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 text-white font-medium shadow-md hover:shadow-lg transition-all duration-200 mt-3 sm:mt-0'
-      >
+        >
         Subscribe
       </button>
     </div>
+        </form>
   </div>
 
   {/* right side */}
