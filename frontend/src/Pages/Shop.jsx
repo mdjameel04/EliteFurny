@@ -94,6 +94,12 @@ const Shop = () => {
     <img src={item.Image} alt=""  className='w-64 h-64 object-cover rounded-lg'/>
     <h2 className='text-lg font-semibold mt-3 text-gray-800 '>{item.name} </h2>
     <p className='text-pink-600 mt-1 font-bold'>₹{item.price} </p>
+    <div className='flex items-center justify-center'>
+    <button className="mt-3 bg-gradient-to-r from-pink-500 to-red-500 text-white font-medium py-2 px-4 rounded-full hover:opacity-90 transition">
+  Buy now 
+</button>
+   </div>
+
   </div>
 ))}
 </div>
