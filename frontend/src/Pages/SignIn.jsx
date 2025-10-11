@@ -2,13 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const SignIn = () => {
   return (
-    <div className=" min-h-screen flex items-center justify-center  px-8 bg-[url('../src/assets/Login_img.png')] "
-    // style={{
-    // backgroundImage: `url(${assets.background_image})`,
-    // backgroundSize: "cover",
-    // backgroundPosition: "center"
-
-    // }}
+    <div className=" min-h-screen flex items-center justify-center  px-8 bg-[url('./assets/Login_img.png')] "
+    
     >
 <div className="bg-white/40 shadow-xl w-full max-w-md rounded-lg p-8">
  <h2 className='text-3xl font-bold text-center mb-6 text-gray-800'> Sign In</h2>

@@ -4,7 +4,7 @@ import { assets } from '../assets/assets'
 const Login = () => {
   return (
     <div className="flex min-h-screen items-center justify-center px-8
-    bg-[url('..\src\assets\Login_img.png')]
+    bg-[url('.\assets\Login_img.png')]
     ">
      <div className='bg-white/40 shadow-xl p-8 w-full max-w-md'>
         <h2 className='font-bold text-center text-gray-600 mb-2 text-3xl'>Login page</h2>

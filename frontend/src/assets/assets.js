@@ -27,16 +27,16 @@ import cat_img2 from './cat-img2.png'
 import cat_img3 from './cat-img3.png'
 import cat_img4 from './cat-img4.png'
 import cat_img5 from './cat-img5.png'
-import funry1 from './Furny-img1.png'
-import funry2 from './Furny-img2.png'
-import funry3 from './Furny-img3.png'
-import funry4 from './Furny-img4.png'
-import funry5 from './Furny-img5.png'
-import funry6 from './Furny-img6.png'
-import funry7 from './Furny-img7.png'
-import funry8 from './Furny-img8.png'
-import funry9 from './Furny-img9.png'
-import funry10 from './Furny-img10.png'
+import furny1 from './Furny-img1.png'
+import furny2 from './Furny-img2.png'
+import furny3 from './Furny-img3.png'
+import furny4 from './Furny-img4.png'
+import furny5 from './Furny-img5.png'
+import furny6 from './Furny-img6.png'
+import furny7 from './Furny-img7.png'
+import furny8 from './Furny-img8.png'
+import furny9 from './Furny-img9.png'
+import furny10 from './Furny-img10.png'
 import customer1 from './customer1.png'
 import customer2 from './customer2.png'
 import customer3 from './customer3.png'
@@ -71,7 +71,7 @@ import productimg15 from  './product-img15.avif'
     hero_img1,hero_img2,hero_img3, hero_img4,
     chair,table, background_image,
     cat_img1,cat_img2,cat_img3,cat_img4,cat_img5,
-    funry1, funry2, funry3, funry4, funry5, funry6, funry7, funry8, funry9, funry10,
+    furny1, furny2, furny3, furny4, furny5, furny6, furny7, furny8, furny9, furny10,
     customer1, customer2, customer3,
     promtion,
     productimg1,productimg2, productimg3, productimg4, productimg5, productimg6, productimg7,productimg8,productimg9, productimg10,productimg11, productimg12, productimg13,productimg14, productimg15

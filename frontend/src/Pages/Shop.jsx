@@ -58,10 +58,10 @@ const Shop = () => {
   className="w-full rounded-none"   // full width
 >
   {heroImages.map((item) => (
-    <SwiperSlide key={item.id}>
+    <SwiperSlide key={item.id} className='relative'>
       <img
         src={item.img}
-        alt=""
+        alt="img"
         className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] object-cover "
       />
       <button className='absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-[#FF6B6B] text-white font-bold px-6 py-2 rounded-full shadow-lg hover:bg-[#ff4c4c] transition'> shop-now</button>
@@ -74,12 +74,13 @@ const Shop = () => {
 <div className='mt-8 w-full flex justify-center gap-16 '>
  
   <div>
-  <img src={assets.chair} alt="" className='w-56 h-56 md:64 z-10 object-cover relative '/>
+  <img src={assets.chair} alt="chair" className='w-56 h-56 md:w-64 md:h-64 z-10 object-cover relative'/>
    <div className=" w-72 h-72 md:w-55 md:h-55 rounded-full -translate-y-11/12  absolute bg-[#d57f16]  hidden md:block"></div>
   <h1 className='font-bold text-2xl text-center mt-8 '>Modren tables</h1>
   </div>
   <div>
-  <img src={assets.table} alt="" className='w-56 h-56 md:64 z-10 object-cover relative mt-20  '/>   <h1 className='font-bold text-2xl text-center '>Classic chair</h1>
+  <img src={assets.table} alt="table" className='w-56 h-56 md:w-64 md:h-64 z-10 object-cover relative mt-20'/>  
+   <h1 className='font-bold text-2xl text-center '>Classic chair</h1>
  </div>
 </div> 
 
@@ -90,8 +91,8 @@ const Shop = () => {
 
 <div className='bg-white px-6 py-12 md:px-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6 mt-2'>
 {slides.map((item)=>(
-  <div key={item.id} className='bg-gray-100 roun-xl p-4 shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300'>
-    <img src={item.Image} alt=""  className='w-64 h-64 object-cover rounded-lg'/>
+  <div key={item.id} className='bg-gray-100 rounded-xl p-4 shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300'>
+    <img src={item.Image} alt={item.name}  className='w-64 h-64 object-cover rounded-lg'/>
     <h2 className='text-lg font-semibold mt-3 text-gray-800 '>{item.name} </h2>
     <p className='text-pink-600 mt-1 font-bold'>₹{item.price} </p>
     <div className='flex items-center justify-center'>

@@ -20,9 +20,11 @@ return ()=> window.removeEventListener("scroll",HandelScroll)
   return (
     <nav className={`flex items-center justify-between  max-md:w-full top-0  px-8 py-4   font-bold relative  text-black  ${isScrolled ? "bg-[#839788]  text-black" :"bg-black text-white"}`}>
       {/* Logo */}
+      <Link to={"/"}>
       <div>
         <img src={assets.Logo_1} alt="Logo" className="w-36 h-auto"  />
       </div>
+      </Link>
 
       {/* Desktop Nav Items */}
       <div className="hidden md:flex items-center gap-6 ml-7">
@@ -56,7 +58,7 @@ return ()=> window.removeEventListener("scroll",HandelScroll)
 {/* mobile */}
 
 <div className="block md:hidden" >
-    <img src={MenuOpen ?assets.close_icon : assets.menu} alt="" className="h-8 w-8  " onClick={toggleMenu} />
+    <img src={MenuOpen ?assets.close_icon : assets.menu} alt="icon" className="h-8 w-8  " onClick={toggleMenu} />
 </div>
 
 {/* mobile menu */}

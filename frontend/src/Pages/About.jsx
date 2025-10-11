@@ -8,11 +8,11 @@ import { assets } from '../assets/assets'
 
 const About = () => {
    const Slide = [
-    {id:1, Image:assets.funry1},{id:2, Image:assets.funry7},
-    {id:3, Image:assets.funry2},{id:4, Image:assets.funry8},
-    {id:5, Image:assets.funry3},{id:6, Image:assets.funry9},
-    {id:7, Image:assets.funry4},{id:8, Image:assets.funry10},
-    {id:9, Image:assets.funry5}, {id:10, Image:assets.funry6},
+    {id:1, Image:assets.furny1},{id:2, Image:assets.furny7},
+    {id:3, Image:assets.furny2},{id:4, Image:assets.furny8},
+    {id:5, Image:assets.furny3},{id:6, Image:assets.furny9},
+    {id:7, Image:assets.furny4},{id:8, Image:assets.furny10},
+    {id:9, Image:assets.furny5}, {id:10, Image:assets.furny6},
    
    ]
   return (
@@ -69,7 +69,7 @@ const About = () => {
           >
             <img
               src={item.Image}
-              alt=""
+              alt={item.Image}
               className="w-full h-full object-cover rounded-xl shadow-2xl"
             />
           
@@ -109,7 +109,7 @@ const About = () => {
    {/* right side */}
 
 <div className='md:w-1/2 flex justify-center'>
-<img src={assets.funry1} alt=""  className='w-[90%] md:w-[350px] lg:w-[450px] rounded-2xl shadow-2xl object-cover '/>
+<img src={assets.furny1} alt="funry"  className='w-[90%] md:w-[350px] lg:w-[450px] rounded-2xl shadow-2xl object-cover '/>
 </div>
 
    </div>
@@ -121,7 +121,7 @@ const About = () => {
 {/* left side */}
 
 <div className='w-1/2 flex justify-center'>
-<img src={assets.funry2} alt="" className='w-[90%] md:w-[350px] lg:w-[450px] rounded-xl shadow-2xl object-cover ' />
+<img src={assets.furny2} alt="" className='w-[90%] md:w-[350px] lg:w-[450px] rounded-xl shadow-2xl object-cover ' />
 </div>
 
 {/* right */}

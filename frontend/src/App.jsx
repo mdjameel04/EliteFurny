@@ -8,13 +8,14 @@ import SignIn from './Pages/SignIn'
 import Login from './Pages/Login'
 import Contact from './Pages/Contact'
 import Footer from './Components/Footer'
+import ScrollToTop from './Components/ScrollToTop'
 
 const App = () => {
   return (
     <div>
       {/* Navbar is common to all pages */}
       <Navbar />
-
+      <ScrollToTop/>
       {/* Routes define what changes based on URL */}
       <Routes>
         <Route path="/" element={<Home/>} />   

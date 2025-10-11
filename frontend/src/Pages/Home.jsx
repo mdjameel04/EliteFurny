@@ -17,8 +17,8 @@ const categories =[
     <section >
       {/* Hero Section */}
       <div className="flex flex-col justify-center px-6 sm:px-8 md:px-16 lg:px-24 xl:px-32 text-black 
-             min-h-[80vh] md:min-h-screen bg-[url('/src/assets/Home_furnituer.png')]
-             sm:bg-[url('/src/assets/Home_furnituer1.webp')] bg-no-repeat 
+             min-h-[80vh] md:min-h-screen bg-[url('./assets/Home_furnituer.png')]
+             sm:bg-[url('./assets/Home_furnituer1.webp')] bg-no-repeat 
              bg-cover sm:bg-top md:bg-center lg:bg-contain">
         <p className="bg-[#49b9ff]/50 px-3.5 py-1 rounded-full  w-max text-sm sm:text-base">
           Premium Furniture Collection
@@ -34,7 +34,7 @@ const categories =[
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-xl mt-1 shadow-2xl mx-6 p-6 bg-amber-200 rounded-2xl">
         {/* Feature 1 */}
         <div className="flex items-start">
-          <img src={assets.shipping} alt="" className="w-12 h-12" />
+          <img src={assets.shipping} alt="shipping" className="w-12 h-12" />
           <div className="flex flex-col ml-4">
             <h3 className="font-bold text-lg">Free Shipping</h3>
             <p className="text-sm text-gray-600">Free shipping for order above ₹10,000</p>
@@ -42,8 +42,8 @@ const categories =[
         </div>
 
         {/* Feature 2 */}
-        <div className="flex items-start ]">
-          <img src={assets.payment} alt="" className="w-12 h-12" />
+        <div className="flex items-start ">
+          <img src={assets.payment} alt="payment" className="w-12 h-12" />
           <div className="flex flex-col ml-4">
             <h3 className="font-bold text-lg">Flexible Payment</h3>
             <p className="text-sm text-gray-600">Multiple secure payment options</p>
@@ -52,7 +52,7 @@ const categories =[
 
         {/* Feature 3 */}
         <div className="flex items-start">
-          <img src={assets.contact_support} alt="" className="w-12 h-12" />
+          <img src={assets.contact_support} alt="contact" className="w-12 h-12" />
           <div className="flex flex-col ml-4">
             <h3 className="font-bold text-lg">24x7 Support</h3>
             <p className="text-sm text-gray-600">We support online all days</p>
@@ -60,7 +60,7 @@ const categories =[
         </div>
       </div>
 
-     <div className='mt-22 bg-white  '>
+     <div className='mt-20 bg-white  '>
       <h1 className='font-bold text-center mr-6 text-3xl ' > Featured products</h1>
      </div>
    <Feauters/>
@@ -74,13 +74,15 @@ const categories =[
         key={item.id}
         className="flex flex-col items-center text-gray-700 hover:text-black transition duration-200 min-w-[100px]"
       >
+        <Link to={"/shop"}>
         <div className="bg-amber-400 p-6 rounded-full shadow-md cursor-pointer">
           <img
             src={item.Image}
             alt={item.name}
             className="w-20 h-20 object-contain"
-          />
+            />
         </div>
+            </Link>
         <p className="mt-2 font-medium">{item.name}</p>
       </div>
     ))}
