@@ -7,6 +7,7 @@ import Shop from './Pages/Shop'
 import SignIn from './Pages/SignIn'
 import Login from './Pages/Login'
 import Contact from './Pages/Contact'
+import Footer from './Components/Footer'
 
 const App = () => {
   return (
@@ -22,8 +23,9 @@ const App = () => {
         <Route path='/signin' element={<SignIn/>} />
         <Route path='/login' element={<Login/>}/>
         <Route path='/Contact' element={<Contact/>}/>
-
       </Routes>
+
+      <Footer/>
     </div>
   )
 }
